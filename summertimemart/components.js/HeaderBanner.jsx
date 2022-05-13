@@ -6,6 +6,7 @@ const HeaderBanner = ({headerBanner}) => {
     <div className='hero-banner-container'>
       <div>
         {/* <p className='beats-solo'>{headerBanner.smallText}</p> */}
+        {/* <h2>{headerBanner.smallText}</h2> */}
         <h1>{headerBanner.largeText2}</h1>
         <h3>{headerBanner.midText}</h3>
         <img src={urlFor(headerBanner.image)} alt='Mobilephones' className='hero-banner-image'/>
@@ -16,7 +17,7 @@ const HeaderBanner = ({headerBanner}) => {
         </Link>
       </div>
       <div className='desc'>
-        <h5>Description</h5>
+        <h5>Details</h5>
         <p>{headerBanner.desc}</p>
       </div>
     </div>

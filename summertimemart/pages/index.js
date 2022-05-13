@@ -11,9 +11,9 @@ const Home = ({products, banners}) => (
       <p>Showing the top rated Mobiles</p>
     </div>
     <div className='products-container'>
-      {products?.map((product) => product.name)}
+      {products?.map((product) => <Product product={product} />)}
     </div>
-  <FooterBanner/>
+  <FooterBanner footerBanner={banners.length && banners[0]}/>
   </>
 );
 export const getServerSideProps = async () => {

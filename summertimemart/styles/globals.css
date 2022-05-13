@@ -121,12 +121,12 @@ width: 100%;
 }
 
 .product-name{
-  font-weight: 500;
+  font-weight: 800;
 }
 .product-price{
   font-weight: 800;
   margin-top: 6px;
-  color: black;
+  color: rgb(105, 59, 59);
 }
 
 .hero-banner-container{
@@ -157,6 +157,11 @@ width: 100%;
 
 .hero-banner-container h3{
   font-size: 4rem;
+  margin-top: 4px;
+  color: #324d67;
+}
+.hero-banner-container h2{
+  font-size: 2rem;
   margin-top: 4px;
   color: #324d67;
 }
@@ -214,7 +219,7 @@ flex-direction: column;
 }
 .footer-banner-container{
   padding: 100px 40px;
-  background-color: #f02d34;
+  background-color: #5b767c;
   border-radius: 15px;
   position: relative;
   height: 400px;
