@@ -66,9 +66,9 @@ width: 100%;
     margin-left: 6px;
 }
 .logo{
-  color: gray;
+  color: rgb(75, 106, 169);
   font-size: 18px;
-
+  font-weight: 600;
 }
 .cart-icon{
   font-size: 25px;
