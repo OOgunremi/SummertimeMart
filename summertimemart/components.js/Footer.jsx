@@ -1,6 +1,6 @@
 import React from 'react';
-import { AiFillFacebook, AiOutlineTwitter, AiFillInstagram } from 'react-icons/ai';
-
+import { AiFillFacebook, AiOutlineTwitter, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import Link from 'next/link';
 const Footer = () => {
   return (
     <div className='footer-container'>
@@ -9,6 +9,7 @@ const Footer = () => {
         <AiFillFacebook/>
         <AiOutlineTwitter/>
         <AiFillInstagram/>
+        <a href='www.google.com' target='_blank'><AiFillLinkedin /></a>
       </p>
     </div>
   )
