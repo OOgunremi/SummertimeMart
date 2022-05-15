@@ -6,10 +6,16 @@ import { useStateContext } from '../../context/StateContext';
 import toast from 'react-hot-toast';
 
 
+
 const ProductDetails = ({product, products}) => {
   const [index, setIndex] = useState(0)
   const { image, name, description, price } = product;
-  const { incQty, decQty, qty, onAdd } = useStateContext();
+  const { incQty, decQty, qty, onAdd, setShowCart } = useStateContext();
+
+  const handleBuyNow = ()=> {
+    onAdd(product, qty);
+    setShowCart(true)
+  }
 
   return (
     <div>
@@ -22,6 +28,7 @@ const ProductDetails = ({product, products}) => {
           <div className='small-images-container'>
             {image?.map((item, i) => (
               <img src={urlFor(item)}
+              key={i}
               className={i === index ? 'small-image selected-image' : 'small-image'}
               onMouseEnter={(e) => setIndex(i)}
               height={200}
@@ -48,13 +55,13 @@ const ProductDetails = ({product, products}) => {
               <h3>Quantity</h3>
               <p className='quantity-desc'>
                 <span className='minus' onClick={decQty}><AiOutlineMinus/></span>
-                <span className='num' onClick=''>{qty}</span>
+                <span className='num' >{qty}</span>
                 <span className='plus' onClick={incQty}><AiOutlinePlus/></span>
               </p>
               </div>
               <div className='buttons'>
                 <button className='add-to-cart' type= 'button' onClick={() => onAdd(product, qty)}> Add to Cart</button>
-                <button className='buy-now' type= 'button' onClick=''> Buy Now</button>
+                <button className='buy-now' type= 'button' onClick={handleBuyNow}> Buy Now</button>
               </div>
           </div>
         </div>

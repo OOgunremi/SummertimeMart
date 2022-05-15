@@ -132,6 +132,7 @@ width: 100%;
 .hero-banner-container{
   padding: 100px 40px;
   background-color: #dcdcdc;
+  background-image: linear-gradient(to left,pink,rgb(206, 200, 183));
   border-radius: 15px;
   position: relative;
   height: 500px;
@@ -143,9 +144,9 @@ width: 100%;
   font-size: 20px;
 }
 .hero-banner-container button{
-   border-radius: 15px;
+  border-radius: 15px;
   padding: 10px 16px;
-  background-color: #af2125;
+  background-color: #e4161d;
   color: white;
   border: none;
   margin-top: 40px;
@@ -158,7 +159,7 @@ width: 100%;
 .hero-banner-container h3{
   font-size: 4rem;
   margin-top: 4px;
-  color: #324d67;
+  color: #041e37;
 }
 .hero-banner-container h2{
   font-size: 2rem;
@@ -166,17 +167,21 @@ width: 100%;
   color: #324d67;
 }
 .hero-banner-container h1{
-  color: rgb(150, 134, 134);
+  color: rgb(206, 21, 21);
   font-size: 10em;
   margin-left: -20px;
   text-transform: uppercase;
 }
 .hero-banner-image{
+  display: flex;
   position: absolute;
   top: 0%;
   right:20%;
-  width: 450px;
-  height: 450px;
+  width: 350px;
+  height: 440px;
+}
+@media screen and (max-width: 1000px) { 
+  .hero-banner-image { display: none; } 
 }
 
 
@@ -219,7 +224,7 @@ flex-direction: column;
 }
 .footer-banner-container{
   padding: 100px 40px;
-  background-color: #5b767c;
+  background-image: linear-gradient(to left,pink,rgb(52, 41, 9));
   border-radius: 15px;
   position: relative;
   height: 400px;
@@ -432,8 +437,7 @@ padding: 30px 65px;
 
 .product-detail-image{
   border-radius: 15px;
-   background-color: #ebebeb;
-
+  background-color: #ebebeb;
   width: 400px;
   height: 400px;
   cursor: pointer;

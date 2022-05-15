@@ -6,10 +6,10 @@ const Footer = () => {
     <div className='footer-container'>
       <p>2022 KoboClicks All rights reserved</p>
       <p className='icons'>
-        <AiFillFacebook/>
-        <AiOutlineTwitter/>
-        <AiFillInstagram/>
-        <a href='www.google.com' target='_blank'><AiFillLinkedin /></a>
+        <a href='https://www.instagram.com/koboclicks/?hl=en' target='_blank'><AiFillFacebook/></a>
+        <a href='https://twitter.com/lekanogunremi' target='_blank'><AiOutlineTwitter/></a>
+        <a href='https://www.instagram.com/koboclicks/?hl=en' target='_blank'><AiFillInstagram /></a>
+        <a href='https://www.linkedin.com/in/oogunremi' target='_blank'><AiFillLinkedin /></a>
       </p>
     </div>
   )

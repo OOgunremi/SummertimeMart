@@ -15,14 +15,11 @@ export default async function handler(req, res) {
           { shipping_rate: 'shr_1Kzh3dFHtIwdR0mhwYCKGBGq' },
         ],
         line_items: req.body.map((item) => {
-         
-
           return {
             price_data: { 
               currency: 'cad',
               product_data: { 
                 name: item.name,
-
               },
               unit_amount: item.price * 100,
             },
