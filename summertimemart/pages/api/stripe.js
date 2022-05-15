@@ -1,4 +1,4 @@
-import Stripe from 'stripe';
+import Stripe from 'stripe'; 
 
 const stripe = new Stripe(process.env.NEXT_SECRET_STRIPE_SECRET_KEY);
 
